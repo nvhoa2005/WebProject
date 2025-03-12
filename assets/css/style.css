@@ -31,11 +31,15 @@ a {
 
 .header-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
+.header__logo {
+  margin-left: 151px;
+}
+
 .navbar__list {
+  margin-left: 120px;
   display: flex;
 }
 
@@ -66,6 +70,10 @@ a {
   position: absolute;
 }
 
+.action {
+  margin-left: 110px;
+}
+
 .action__icon {
   padding: 8px 12px;
 }
@@ -76,4 +84,89 @@ a {
 
 .action__icon--img:hover {
   scale: 1.1;
+}
+
+/* ===================hero======================= */
+.hero {
+  display: flex;
+  margin-top: 33px;
+  align-items: center;
+  background: #ffd322;
+}
+
+.hero__media {
+  flex: 1;
+}
+
+.hero__image--img {
+  /* dùng display block để loại bỏ khoảng trắng thừa dưới chân do thẻ img */
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero__content {
+  flex: 1;
+  margin-left: 43px;
+}
+
+.hero__summary {
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.33; /* 333.333% */
+  text-transform: uppercase;
+}
+
+.hero__heading {
+  max-width: 528px;
+  margin-top: 22px;
+  color: #000;
+  font-size: 9.6rem;
+  font-weight: 400;
+}
+
+.hero__desc {
+  margin-top: 31px;
+  max-width: 470px;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.hero__btn {
+  margin-top: 64px;
+  width: 462px;
+  height: 96px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero__btn:hover {
+  scale: 1.1;
+}
+
+.hero__content--dot {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  margin-top: 64px;
+  gap: 15px;
+}
+
+.hero__content--subDot {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero__content--subDot-active {
+  color: #000;
 }
