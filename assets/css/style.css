@@ -557,7 +557,7 @@ a {
 .new__list--item {
   padding-top: 30px;
   position: relative;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .new__list--item:hover {
@@ -575,7 +575,6 @@ a {
   object-fit: cover;
   object-position: 50% 35%;
   border-radius: 40px;
-  transition: 0.3s;
 }
 
 .new__list--more {
@@ -585,7 +584,7 @@ a {
   top: 250px;
   opacity: 0;
   transform: translateX(-70px);
-  transition: 0.3s;
+  transition: 0.5s ease-out;
 }
 
 .new__list--btn {
