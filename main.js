@@ -20,3 +20,15 @@ subDots.forEach(subDot => {
         subDot.classList.remove("hero__content--subDot-active")
     })
 });
+
+// ===================== New ============================
+newMores = document.querySelectorAll(".new__list--item")
+newMores.forEach(newMore => {
+    let newMoreChild = newMore.querySelector(".new__list--more")
+    newMore.addEventListener("mouseover", () => {
+        newMoreChild.style.opacity = 1
+    })
+    newMore.addEventListener("mouseout", () => {
+        newMoreChild.style.opacity = 0
+    })
+})

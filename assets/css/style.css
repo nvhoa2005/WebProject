@@ -51,6 +51,7 @@ a {
 .common-header--content {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 25px;
 }
@@ -112,6 +113,7 @@ a {
 
 /* ========================header==================== */
 .header {
+  height: 140px;
   padding-top: 32px;
   min-height: 100vh;
   background: #fff;
@@ -438,7 +440,8 @@ a {
 
 /* ========================= sale ======================= */
 .sale {
-  padding: 228px 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .sale__heading {
@@ -542,7 +545,7 @@ a {
 /* ====================== new ========================= */
 .new__content {
   padding-top: 60px;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 
 .new__list {
@@ -554,6 +557,15 @@ a {
 .new__list--item {
   padding-top: 30px;
   position: relative;
+  transition: 0.3s;
+}
+
+.new__list--item:hover {
+  scale: 1.2;
+}
+
+.new__list--item:hover .new__list--more{
+  transform: translateX(0);
 }
 
 .new__list--img {
@@ -566,20 +578,14 @@ a {
   transition: 0.3s;
 }
 
-.new__list--img:hover {
-  scale: 1.2;
-}
-
 .new__list--more {
   position: absolute;
   display: flex;
   left: 0;
   top: 250px;
+  opacity: 0;
+  transform: translateX(-70px);
   transition: 0.3s;
-}
-
-.new__list--more:hover {
-  opacity: 0.7;
 }
 
 .new__list--btn {
@@ -616,7 +622,7 @@ a {
 /* ========================= feedback ==================== */
 .feedback {
   padding-top: 72px;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 
 .feedback__content {
@@ -709,6 +715,12 @@ a {
   margin-top: 43px;
   border-radius: 30px;
   background: #fff;
+  transition: 0.3s;
+}
+
+.feedback__item:hover{
+  scale: 1.2;
+  z-index: 2;
 }
 
 .feedback__item--left {
@@ -724,4 +736,131 @@ a {
 .feedback__item--right {
   margin-left: -50px;
   width: 425.881px;
+}
+
+/* ======================= footer ====================== */
+.footer__content {
+  padding-bottom: 44px;
+  display: flex;
+  border-radius: 56px 56px 0px 0px;
+  background: #000;
+  position: relative;
+}
+
+.footer__content::after {
+  position: absolute;
+  content: "";
+  width: 1440px;
+  height: 2px;
+  background: #686868;
+  top: 100%;
+  left: 0;
+}
+
+.footer__brand {
+  margin-top: 63px;
+  margin-left: 49px;
+}
+
+.footer__brand--name {
+  width: 581.47px;
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1.92; /* 191.667% */
+}
+
+.footer__brand--desc {
+  width: 518px;
+  margin-top: 8px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.footer__sub {
+  margin-left: 145px;
+  margin-top: 77px;
+}
+
+.footer__sub--input {
+  width: 600.495px;
+  height: 70.043px;
+  border-radius: 11px;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: normal;
+  padding: 18px 48px;
+}
+
+.footer__sub--input::placeholder {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.footer__sub--btn {
+  margin-top: 21px;
+  width: 212.849px;
+  height: 59.855px;
+  border-radius: 8px;
+  background: #f8b3b8;
+  color: #292929;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer__sub--btn:hover {
+  scale: 1.1;
+}
+
+.footer__sub--btn:active {
+  scale: 0.9;
+}
+
+/* ================= copyright ==================== */
+.footer__bottom {
+  background: #000;
+  height: 105px;
+}
+
+.footer__bottom--content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 49px;
+  height: 100%;
+}
+
+.footer__policy {
+  width: 300px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.footer__policy:hover{
+  opacity: 0.9;
+}
+
+.footer__copyright {
+  width: 297.275px;
+  height: 30.564px;
+  color: #fff;
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: normal;
+  margin-right: 65px;
 }
